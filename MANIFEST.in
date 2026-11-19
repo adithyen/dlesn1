@@ -1,0 +1,2 @@
+include README.md
+recursive-include src/dlesn1/data *

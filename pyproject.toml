@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dlesn1"
+version = "0.1.0"
+authors = [
+  { name="adithyen", email="adityenh@gmail.com" },
+]
+description = "Deep Learning lab notebooks distribution package"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+dlesn1 = "dlesn1.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"dlesn1" = ["data/*"]
